@@ -6,7 +6,16 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+}
+
 navbar {
+    padding-top: 8px;
+    margin-right: 10px;
     display: flex;
     font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
@@ -144,7 +153,7 @@ navbar {
     font-size: 14px;
     color: #3c4043;
     border-radius: 4px;
-    border: 1px solid transparent;
+    border: 1px solid white;
     padding: 8px 16px;
     background-color: rgb(248, 249, 250);
 }
@@ -155,6 +164,10 @@ navbar {
     /* background-color: turquoise; */
 }
 
+.gbutton:focus {
+    border: 1px solid rgb(77, 144, 254);
+}
+
 #offers {
     margin: 32px 0 0 0;
     text-align: center;
@@ -163,6 +176,7 @@ navbar {
 }
 
 .offeredlang {
+    outline: none;
     margin: 0px 3px;
     color: rgb(26, 13, 171);
     text-decoration: none;
@@ -170,4 +184,58 @@ navbar {
 
 .offeredlang:hover {
     text-decoration: underline;
+}
+
+footer {
+    /* margin: 0px 0px -10px -5px; */
+    color: #6F6F6F;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.columnfooter {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgb(220, 220, 220);
+    background-color: #F2F2F2;
+    height: 40px;
+
+    padding-left: 30px;
+}
+
+#leftfooter {
+    display: flex;
+}
+
+#rightfooter {
+    position: absolute;
+    right: 3px;
+    display: flex;
+    justify-content: end;
+}
+
+#country {
+    font-size: 15px;
+}
+
+.others {
+    outline: none;
+    color: #6F6F6F;
+    text-decoration: none;
+    margin-right: 27px;
+}
+
+.others:hover {
+    text-decoration: underline;
+}
+
+.others:active {
+    color: rgb(234, 67, 53);
 }
