@@ -2,6 +2,10 @@
     background-color:cadetblue;
 } */
 
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 navbar {
     display: flex;
     font-size: 13px;
@@ -80,7 +84,7 @@ navbar {
 
 #searchbar {
     display: flex;
-    align-items: top;
+    align-items: start;
     justify-content: left;
     background-color: transparent;
     border: solid;
@@ -100,7 +104,6 @@ navbar {
 
 #searchinput {
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
     /* background-color: rgba(0, 150, 150, .1); */
     height: 42px;
     max-width: 488px;
@@ -123,4 +126,48 @@ navbar {
 
 :not(:placeholder-shown) + #cancelsearch{
     opacity: 1;
+}
+
+#buttons {
+    display: flex;
+    height: auto;
+    margin: auto;
+    justify-content: center;
+    align-items: start;
+    padding-top: 7px;
+}
+
+.gbutton {
+    cursor: pointer;
+    margin: 0px 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #3c4043;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    padding: 8px 16px;
+    background-color: rgb(248, 249, 250);
+}
+
+.gbutton:hover {
+    border: 1px solid rgb(220, 220, 220);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+    /* background-color: turquoise; */
+}
+
+#offers {
+    margin: 32px 0 0 0;
+    text-align: center;
+    color: #222222;
+    font-size: 13px;
+}
+
+.offeredlang {
+    margin: 0px 3px;
+    color: rgb(26, 13, 171);
+    text-decoration: none;
+}
+
+.offeredlang:hover {
+    text-decoration: underline;
 }
